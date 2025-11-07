@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* Right column (60%) */}
       <div className="flex-1 bg-gray-50">
-        <div className="space-y-6" style={{ paddingTop: '20px', paddingLeft: '80px' }}>
+        <div className="space-y-6" style={{ paddingTop: '180px', paddingLeft: '80px' }}>
           <h2 className="text-2xl font-semibold text-gray-900 underline">
             Getting Started
           </h2>
