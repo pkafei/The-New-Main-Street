@@ -44,14 +44,18 @@ export default function Home() {
           {/* Social Media Circles */}
           <div className="flex gap-3 pt-2">
             <a
-              href="#"
+              href="https://www.youtube.com/@thenewmainstreet"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
               aria-label="YouTube"
             >
               <YouTubeIcon className="h-6 w-6" />
             </a>
             <a
-              href="#"
+              href="https://twitter.com/thenewmainstr"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
               aria-label="Twitter"
             >
