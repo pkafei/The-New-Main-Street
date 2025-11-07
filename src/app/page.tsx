@@ -1,10 +1,13 @@
+import Image from 'next/image';
 import { Avatar } from '@/components/avatar';
 import { YouTubeIcon, TwitterIcon, FacebookIcon } from '@/components/social-icons';
 
-// Placeholder for user data - replace with actual data source
+// User data with Cloudinary image URLs
 const user = {
-  avatarUrl: '/portia-avatar.jpg', // Update with actual image path
+  avatarUrl: 'https://res.cloudinary.com/dncb2k7md/image/upload/v1757469522/portia_pic_jutzkl.jpg',
 };
+
+const logoUrl = 'https://res.cloudinary.com/dncb2k7md/image/upload/v1762528486/NMS_Logo_nsgnep.png';
 
 export default function Home() {
   return (
@@ -12,10 +15,15 @@ export default function Home() {
       {/* Left column (40%) - Fixed, centered content like stan.store */}
       <div className="w-[40%] bg-white border-r border-gray-100 flex flex-col">
         {/* Logo at top */}
-        <div className="p-6 border-b border-gray-100">
-          <div className="h-12 w-12 rounded-lg bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-400 text-xs">Logo</span>
-          </div>
+        <div className="p-6">
+          <Image
+            src={logoUrl}
+            alt="NMS Logo"
+            width={120}
+            height={120}
+            className="object-contain"
+            unoptimized
+          />
         </div>
 
         {/* Centered content */}
